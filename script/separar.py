@@ -4,13 +4,16 @@ import math
 from sklearn.model_selection import train_test_split
 import glob
 
-dir_origen = "archive/PotatoPlants"
+dir_origen = "../archive/PotatoPlants"
 dir_destino = "dataset"
 
 if not os.path.exists(dir_destino):
     os.mkdir(dir_destino)
 
 dir_destino = dir_destino+"/data/"
+
+if not os.path.exists(dir_destino):
+    os.mkdir(dir_destino)
 
 sub_dirs = os.listdir(dir_origen)
 
